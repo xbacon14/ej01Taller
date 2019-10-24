@@ -4,7 +4,7 @@
 
 h1 {
   text-align: center;
-  font-size: 34px;
+  font-size: 2em;
 }
 
 h5 {
@@ -18,16 +18,20 @@ h5 {
   background: #d6f1e2c9;
 }
 
-ul li {
-  background: #d6f1e2c9;
-}
-
 #vResult {
-  margin-top: 3%;
+  margin-top: 1%;
   padding: 20px 50px;
   background: #d6f1e2c9;
   margin-left: auto;
   margin-right: auto;
+}
+
+#vCambio #vResult{
+  width: 50%;
+}
+
+ul li {
+  background: #d6f1e2c9;
 }
 
 #moneda {
