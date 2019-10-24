@@ -18,7 +18,7 @@ function Calcular() {
     document.getElementById('mEntrante').innerHTML = monto + " Dolares.";
     document.getElementById('cambio').innerHTML = resultado + " Gs.";
 
-    document.getElementById("monto").innerHTML = "";
+
 
   } if (seleccion == "Real") {
     resultado = parseInt(monto) * parseInt(moneda);
@@ -33,7 +33,7 @@ function Calcular() {
     document.getElementById('cambio').innerHTML = resultado + " Gs.";
   }
 
- 
+
 
 }
 
