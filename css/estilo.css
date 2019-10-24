@@ -4,6 +4,7 @@
 
 h1 {
   text-align: center;
+  font-size: 34px;
 }
 
 h5 {
@@ -13,10 +14,11 @@ h5 {
 #vCambio {
   margin-left: auto;
   margin-right: auto;
-  padding: 5px 50px;
+  padding: 20px 50px;
   background: #d6f1e2c9;
 }
-ul li{
+
+ul li {
   background: #d6f1e2c9;
 }
 
@@ -28,10 +30,10 @@ ul li{
   margin-right: auto;
 }
 
-#moneda{
+#moneda {
   width: 40%;
 }
 
-#monto{
+#monto {
   width: 80%;
 }

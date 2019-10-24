@@ -1,28 +1,43 @@
 
 
-$("#btnCalcular").click(function(ev) {
+$("#btnCalc").click(function () {
   Calcular();
 
 });
 
-function Calcular(){
-  var moneda = $('option').hasClass("selected").getValue();
-  console.log(moneda);
-  
+function Calcular() {
+  var opcion = document.getElementById("moneda"); //selecciona el select
+  var seleccion = opcion.options[opcion.selectedIndex].text;
+  var moneda = opcion.options[opcion.selectedIndex].value
+  var monto = document.getElementById("monto").value;
+  var resultado;
+
+  if (seleccion == "Dolar") {
+    resultado = parseInt(monto) * parseInt(moneda);
+    document.getElementById('cotizacion').innerHTML = moneda + " Gs.";
+    document.getElementById('mEntrante').innerHTML = monto + " Dolares.";
+    document.getElementById('cambio').innerHTML = resultado + " Gs.";
+
+    console.log(resultado);
+    document.getElementById("monto").innerHTML = "";
+
+  } if (seleccion == "Real") {
+    resultado = parseInt(monto) * parseInt(moneda);
+    document.getElementById('cotizacion').innerHTML = moneda + " Gs.";
+    document.getElementById('mEntrante').innerHTML = monto + " Reales.";
+    document.getElementById('cambio').innerHTML = resultado + " Gs.";
+    console.log(resultado);
+
+  } if (seleccion == "Peso") {
+    resultado = parseInt(monto) * parseInt(moneda);
+    document.getElementById('cotizacion').innerHTML = moneda + " Gs.";
+    document.getElementById('mEntrante').innerHTML = monto + " Pesos.";
+    document.getElementById('cambio').innerHTML = resultado + " Gs.";
+    console.log(resultado);
   }
 
-  function Dolargs(){
-    var vEntrante = document.getElementById("monto");
-    var vResult = vEntrante*document.getElementById("dolar").value;
-    console.log(vResult);
-  
-  }
-  
-/* function Realgs(){
-  var vEntrante = (document.);
+ 
 
 }
-function Pesogs(){
-  var vEntrante = (document.);
 
-} */
+

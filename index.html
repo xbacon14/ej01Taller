@@ -18,9 +18,9 @@
           <div class="col-sm-4" id="vCambio">
             <label for="divisas"><h3>Divisas</h3></label>
             <select name="" id="moneda" class="form-control">
-              <option value="">Dolar</option>
-              <option value="">Real</option>
-              <option value="">Peso</option>
+              <option value="6000">Dolar</option>
+              <option value="1500">Real</option>
+              <option value="250">Peso</option>
             </select>
             <div class="">
               <input
@@ -35,11 +35,17 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row card-ajuste">
           <div class="col-sm-4" id="vResult">
-            <label for="cotizacion">Cotización: </label> <br>
-            <label for="monto">Monto: </label> <br>
-            <label for="cambio">Cambio: </label>
+            <label for="lcotizacion">Cotización: </label> 
+            <label for="cotizacion" id="cotizacion"></label>
+            <br>
+            <label for="lmonto">Monto: </label>
+            <label for="monto" id="mEntrante"></label>
+            
+            <br>
+            <label for="lcambio">Cambio: </label>
+            <label for="cambio" id="cambio"></label>
           </div>
         </div>
       </div>
