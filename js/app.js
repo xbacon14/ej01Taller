@@ -18,7 +18,6 @@ function Calcular() {
     document.getElementById('mEntrante').innerHTML = monto + " Dolares.";
     document.getElementById('cambio').innerHTML = resultado + " Gs.";
 
-    console.log(resultado);
     document.getElementById("monto").innerHTML = "";
 
   } if (seleccion == "Real") {
@@ -26,14 +25,12 @@ function Calcular() {
     document.getElementById('cotizacion').innerHTML = moneda + " Gs.";
     document.getElementById('mEntrante').innerHTML = monto + " Reales.";
     document.getElementById('cambio').innerHTML = resultado + " Gs.";
-    console.log(resultado);
 
   } if (seleccion == "Peso") {
     resultado = parseInt(monto) * parseInt(moneda);
     document.getElementById('cotizacion').innerHTML = moneda + " Gs.";
     document.getElementById('mEntrante').innerHTML = monto + " Pesos.";
     document.getElementById('cambio').innerHTML = resultado + " Gs.";
-    console.log(resultado);
   }
 
  
