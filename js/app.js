@@ -13,6 +13,7 @@ function Calcular(){
 
   function Dolargs(){
     var vEntrante = document.getElementById("monto");
+    
     var vResult = vEntrante*document.getElementById("dolar").value;
     console.log(vResult);
   
