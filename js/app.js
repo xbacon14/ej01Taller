@@ -15,13 +15,6 @@ function Calcular() {
     $("#cotizacion").html(moneda + " Gs.");
     $("#mEntrante").html(monto + " Dolares.");
     $("#cambio").html(resultado + " Gs.");
-
-    function Dolargs() {
-      var vEntrante = $("#monto").html();
-
-      var vResult = vEntrante * moneda;
-      console.log(vResult);
-    }
   }
   if (opcion == "Real") {
     resultado = parseInt(monto) * parseInt(moneda);
